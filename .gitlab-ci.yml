@@ -1,0 +1,7 @@
+.run-checker:
+  script:
+    - checker-faceid $CHECKER_CONFIG
+
+test:
+  extends: .run-checker
+  image: akolotov/ftchecker-faceid
